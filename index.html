@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06296f" />
+    <meta name="description" content="Summer training report by Faisal Ahmed Al-Salmi at the Saudi Electricity Company, High Voltage Transmission Substations, Jeddah, 2026." />
+    <title>Faisal Al-Salmi | Summer Training 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./motion.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+  </head>
+  <body data-layout="cover">
+    <canvas id="wave" class="layer-wave" aria-hidden="true"></canvas>
+    <main id="deck" class="deck" aria-label="Summer training report"></main>
+    <canvas id="fx" class="layer-fx" aria-hidden="true"></canvas>
+    <div class="current-line" aria-hidden="true"><span class="current-bar"></span><span class="current-node"></span></div>
+    <img id="brandLogo" class="brand-logo" src="./assets/logo.svg" alt="Saudi Energy" draggable="false" />
+    <nav class="deck-nav" aria-label="Slide navigation">
+      <button id="prevButton" class="nav-button" type="button" aria-label="Previous slide">↑</button>
+      <div class="progress" aria-live="polite"><span id="currentSlide">01</span><span class="progress-slash">/</span><span id="totalSlides">13</span></div>
+      <button id="nextButton" class="nav-button" type="button" aria-label="Next slide">↓</button>
+    </nav>
+    <script src="./content.js" defer></script>
+    <script src="./wave.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
